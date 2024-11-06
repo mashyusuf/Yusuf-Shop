@@ -1,8 +1,12 @@
+
+import Header from '@/components/header/Header'
 import React from 'react'
 
 function page() {
   return (
-    <div className='text-2xl text-red-600'>page</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
