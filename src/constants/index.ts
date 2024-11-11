@@ -1,3 +1,5 @@
+import { bannerImg } from "@/app/assets/banner";
+
 export const navigation = [
   {
     title: "Home", href: "/"
@@ -18,3 +20,13 @@ export const navigation = [
     title: "Contact", href: "/contact"
   },
 ];
+
+export const banner ={
+  priceText: "Starting At %999.90",
+  title:"The Best Tablet Collection 2024",
+  textOne: "Exclusive Offer",
+  offerPrice:"-30%",
+  textTwo:"off this week",
+  buttonLink:"/products",
+  image: bannerImg,
+}
