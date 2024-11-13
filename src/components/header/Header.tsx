@@ -5,7 +5,7 @@ import BottomHeader from './BottomHeader'
 
 function Header() {
   return (
-    <div>
+    <div className='sticky top-0 z-50 bg-white'>
         <TopHeader />
         <MiddleHeader />
         <BottomHeader />
