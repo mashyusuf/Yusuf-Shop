@@ -13,7 +13,7 @@ function Products({ products }: Props) {
       {
         products?.map((item:ProductType)=>(
           <ProductsCard key={item?.id} product={item} />
-        ))}
+        )) }
     </Container>
   );
 }
