@@ -9,7 +9,12 @@ import AddToCartButton from './AddToCartButton'
 function ProductsCard({product}:{product:ProductType}) {
   return (
     <div className='border border-gray-400 hover:shadow-lg overflow-hidden hover:shadow-black/30 duration-200 rounded-md group relative'>
-      <Link href={'/products'}>
+      <Link href={
+        {
+          pathname: `/products/${product?.id}`,
+          query:{id:product?.id}
+        }
+      }>
       <Image src={product?.images[0]} alt='product-img' width={500} height={500} priority={true} className='w-full h-64 object-contain hover:scale-110' />
       <p className='text-xs absolute top-2 right-2 bg-red-500 px-2 py-1 rounded-xl text-white'>{product.discountPercentage}%</p>
       </Link>
