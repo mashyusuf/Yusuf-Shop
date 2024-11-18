@@ -1,8 +1,9 @@
 'use client'
 
 import { twMerge } from "tailwind-merge"
+import { ProductType } from "../../../type";
 
-function AddToCartButton() {
+function AddToCartButton({product,className}:{product:ProductType;className?:string}) {
 
   const handleClick = () => {
     alert('hello');

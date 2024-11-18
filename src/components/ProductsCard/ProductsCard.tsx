@@ -28,7 +28,7 @@ function ProductsCard({product}:{product:ProductType}) {
         {/* Product Price*/}
         <ProductPrice product={product} />
         {/* Product Add Too Cart*/}
-        <AddToCartButton />
+        <AddToCartButton product={product} />
       </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ function ProductsImages({ images }: Props) {
               alt={`Product Image ${index + 1}`}
               width={200}
               height={200}
-              className='w-24 h-24 object-contain cursor-pointer opacity-80 hover:opacity-100 duration-200 border border-gray-200 mb-1 p-1'
+              className={`w-24 h-24 object-contain cursor-pointer opacity-90 hover:opacity-100 duration-200 border border-gray-200 mb-1 p-1 ${currentImage === item && "border-gray-500 opacity-100"}`}
               onClick={() => setCurrentImage(item)} // Update currentImage on click
             />
           </div>
