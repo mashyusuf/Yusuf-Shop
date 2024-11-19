@@ -54,8 +54,9 @@ export interface UserInfoType {
 }
 
 export interface StateType {
-  shopy: {
-    cart: CartItemType[];
-    userInfo: UserInfoType | null;
+  shofy: {
+    cart: ProductType[];
+    favorite:ProductType[];
+    userInfo: any;
   };
 }
