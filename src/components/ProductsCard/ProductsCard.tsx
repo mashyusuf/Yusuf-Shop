@@ -19,7 +19,7 @@ function ProductsCard({product}:{product:ProductType}) {
       <p className='text-xs absolute top-2 right-2 bg-red-500 px-2 py-1 rounded-xl text-white'>{product.discountPercentage}%</p>
       </Link>
       {/* side Bar Section*/}
-      <SideBar />
+      <SideBar product={product} />
       {/* description */}
       <div className='border-t border-t-borderColor py-2 px-4 flex flex-col justify-between h-40'>
       <div>
